@@ -15,7 +15,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">5</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">50</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
@@ -26,26 +26,17 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-<<<<<<< HEAD
         <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Producer-0" enabled="true">
-=======
-        <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Producer" enabled="true">
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
           <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="bootstrap.servers" elementType="Argument">
                 <stringProp name="Argument.name">bootstrap.servers</stringProp>
-<<<<<<< HEAD
-                <stringProp name="Argument.value">localhost:9092</stringProp>
-=======
                 <stringProp name="Argument.value">ssp-kafka-headless.strimzi-030.svc.cluster.local:9092</stringProp>
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="zookeeper.servers" elementType="Argument">
                 <stringProp name="Argument.name">zookeeper.servers</stringProp>
-<<<<<<< HEAD
-                <stringProp name="Argument.value">localhost:2181</stringProp>
+                <stringProp name="Argument.value">ssp-zookeeper-headless.strimzi-030.svc.cluster.local:2181</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="kafka.topic.name" elementType="Argument">
@@ -183,12 +174,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="bootstrap.servers" elementType="Argument">
                 <stringProp name="Argument.name">bootstrap.servers</stringProp>
-                <stringProp name="Argument.value">localhost:9092</stringProp>
+                <stringProp name="Argument.value">ssp-kafka-headless.strimzi-030.svc.cluster.local:9092</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="zookeeper.servers" elementType="Argument">
                 <stringProp name="Argument.name">zookeeper.servers</stringProp>
-                <stringProp name="Argument.value">localhost:2181</stringProp>
+                <stringProp name="Argument.value">ssp-zookeeper-headless.strimzi-030.svc.cluster.local:2181</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="kafka.topic.name" elementType="Argument">
@@ -326,15 +317,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="bootstrap.servers" elementType="Argument">
                 <stringProp name="Argument.name">bootstrap.servers</stringProp>
-                <stringProp name="Argument.value">localhost:9092</stringProp>
+                <stringProp name="Argument.value">ssp-kafka-headless.strimzi-030.svc.cluster.local:9092</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="zookeeper.servers" elementType="Argument">
                 <stringProp name="Argument.name">zookeeper.servers</stringProp>
-                <stringProp name="Argument.value">localhost:2181</stringProp>
-=======
                 <stringProp name="Argument.value">ssp-zookeeper-headless.strimzi-030.svc.cluster.local:2181</stringProp>
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="kafka.topic.name" elementType="Argument">
@@ -471,7 +459,6 @@
           <stringProp name="placeHolder">MESSAGE</stringProp>
           <stringProp name="configClass">com.gslab.pepper.loadgen.impl.PlaintTextLoadGenerator</stringProp>
           <stringProp name="jsonSchema">{
-<<<<<<< HEAD
     &quot;meta&quot;: {
         &quot;version&quot;: 1
     },
@@ -482,18 +469,6 @@
                 &quot;ascii-key&quot;: &quot;R2V2-FU:R/  {{RANDOM_ALPHA_NUMERIC(&quot;abcedefghijklmnopqrwxyzABCDEFGHIJKLMNOPQRWXYZ0123456789&quot;, 25)}}&quot;,
                 &quot;actionString&quot;: &quot;SetTTL&quot;,
                 &quot;actionCode&quot;: 0
-=======
-    "meta": {
-        "version": 1
-    },
-    "content": {
-        "nbkeys": 1,
-        "keys": [
-            {
-                "ascii-key": "R2V2-FU:R/  {{RANDOM_ALPHA_NUMERIC("abcedefghijklmnopqrwxyzABCDEFGHIJKLMNOPQRWXYZ0123456789", 25)}}",
-                "actionString": "SetTTL",
-                "actionCode": 0
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
             }
         ]
     }
@@ -676,7 +651,6 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-<<<<<<< HEAD
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">80</stringProp>
@@ -691,7 +665,7 @@
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">Properties props = new Properties();
-      props.put(&quot;bootstrap.servers&quot;, &quot;localhost:9092&quot;);
+      props.put(&quot;bootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
       props.put(&quot;group.id&quot;, &quot;group&quot;);
       props.put(&quot;enable.auto.commit&quot;, &quot;true&quot;);
       props.put(&quot;auto.commit.interval.ms&quot;, &quot;1000&quot;);
@@ -732,7 +706,7 @@ SampleResult.setSuccessful(true);
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">Properties props = new Properties();
-      props.put(&quot;bootstrap.servers&quot;, &quot;localhost:9092&quot;);
+      props.put(&quot;bootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
       props.put(&quot;group.id&quot;, &quot;group&quot;);
       props.put(&quot;enable.auto.commit&quot;, &quot;true&quot;);
       props.put(&quot;auto.commit.interval.ms&quot;, &quot;1000&quot;);
@@ -810,7 +784,7 @@ SampleResult.setSuccessful(true);
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">Properties props = new Properties();
-      props.put(&quot;bootstrap.servers&quot;, &quot;localhost:9092&quot;);
+      props.put(&quot;bootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
       props.put(&quot;group.id&quot;, &quot;group&quot;);
       props.put(&quot;enable.auto.commit&quot;, &quot;true&quot;);
       props.put(&quot;auto.commit.interval.ms&quot;, &quot;1000&quot;);
@@ -916,95 +890,9 @@ SampleResult.setSuccessful(true);
               <connectTime>true</connectTime>
             </value>
           </objProp>
-=======
-          <stringProp name="LoopController.loops">5</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">60</stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Consumer" enabled="true">
-          <stringProp name="cacheKey">true</stringProp>
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
           <stringProp name="filename"></stringProp>
-          <stringProp name="parameters"></stringProp>
-          <stringProp name="script">Properties props = new Properties();
-      props.put(&quot;bootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
-      props.put(&quot;group.id&quot;, &quot;group&quot;);
-      props.put(&quot;enable.auto.commit&quot;, &quot;true&quot;);
-      props.put(&quot;auto.commit.interval.ms&quot;, &quot;1000&quot;);
-      props.put(&quot;session.timeout.ms&quot;, &quot;30000&quot;);
-      props.put(&quot;key.deserializer&quot;,          
-         &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;);
-      props.put(&quot;value.deserializer&quot;, 
-         &quot;org.apache.kafka.common.serialization.StringDeserializer&quot;);
-      org.apache.kafka.clients.consumer.KafkaConsumer&lt;String, String&gt; consumer = new org.apache.kafka.clients.consumer.KafkaConsumer&lt;String, String&gt;(props);
-      String topic = &quot;bench01&quot;;
-      consumer.subscribe(Arrays.asList(topic));
-      System.out.println(&quot;Subscribed to topic &quot; + &quot;bench01&quot;);
-long t = System.currentTimeMillis();
-  long end = t + 5000;
-  f = new FileOutputStream(&quot;.\\data.csv&quot;, true);
-  p = new PrintStream(f);
-  while (System.currentTimeMillis()&lt;end) 
-  {
-      org.apache.kafka.clients.consumer.ConsumerRecords&lt;String, String&gt; records = consumer.poll(100);
-      for ( org.apache.kafka.clients.consumer.ConsumerRecord&lt;String, String&gt; record : records)
-     {
-         p.println( &quot;offset = &quot; + record.offset() +&quot; value = &quot; + record.value());
-     }
-     consumer.commitSync(); 	 
-   }
-   consumer.close();
-   p.close();
-   f.close();
-SampleResult.setSuccessful(true);
-
-
-   </stringProp>
-          <stringProp name="scriptLanguage">groovy</stringProp>
-        </JSR223Sampler>
-        <hashTree>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
-        </hashTree>
+        </ResultCollector>
+        <hashTree/>
       </hashTree>
       <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
@@ -1042,7 +930,6 @@ SampleResult.setSuccessful(true);
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-<<<<<<< HEAD
       <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
@@ -1152,8 +1039,6 @@ SampleResult.setSuccessful(true);
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-=======
->>>>>>> 6b3ae1c8e1057cb2dd71d8064783acc7b6b88721
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
