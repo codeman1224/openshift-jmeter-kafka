@@ -6,7 +6,7 @@ stages {
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       steps {
-      git 'https://github.com/hbenmansour/openshift-jmeter-kafka.git'
+      git 'https://github.com/jihed/openshift-jmeter-kafka.git'
       }
                
    }
