@@ -76,7 +76,7 @@
               </elementProp>
               <elementProp name="acks" elementType="Argument">
                 <stringProp name="Argument.name">acks</stringProp>
-                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.value">0</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="send.buffer.bytes" elementType="Argument">
@@ -798,7 +798,7 @@ SampleResult.setSuccessful(true);
       consumer.subscribe(Arrays.asList(topic));
       System.out.println(&quot;Subscribed to topic &quot; + &quot;bench01&quot;);
 long t = System.currentTimeMillis();
-  long end = t + 5000;
+  long end = t + 600000;
   f = new FileOutputStream(&quot;.\\data.csv&quot;, true);
   p = new PrintStream(f);
   while (System.currentTimeMillis()&lt;end) 
