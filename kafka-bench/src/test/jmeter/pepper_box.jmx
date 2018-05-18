@@ -459,16 +459,16 @@
           <stringProp name="placeHolder">MESSAGE</stringProp>
           <stringProp name="configClass">com.gslab.pepper.loadgen.impl.PlaintTextLoadGenerator</stringProp>
           <stringProp name="jsonSchema">{
-    &quot;meta&quot;: {
-        &quot;version&quot;: 1
+    "meta": {
+        "version": 1
     },
-    &quot;content&quot;: {
-        &quot;nbkeys&quot;: 1,
-        &quot;keys&quot;: [
+    "content": {
+        "nbkeys": 1,
+        "keys": [
             {
-                &quot;ascii-key&quot;: &quot;R2V2-FU:R/  {{RANDOM_ALPHA_NUMERIC(&quot;abcedefghijklmnopqrwxyzABCDEFGHIJKLMNOPQRWXYZ0123456789&quot;, 25)}}&quot;,
-                &quot;actionString&quot;: &quot;SetTTL&quot;,
-                &quot;actionCode&quot;: 0
+                "ascii-key": "R2V2-FU:R/  {{RANDOM_ALPHA_NUMERIC("abcedefghijklmnopqrwxyzABCDEFGHIJKLMNOPQRWXYZ0123456789", 25)}}",
+                "actionString": "SetTTL",
+                "actionCode": 0
             }
         ]
     }
@@ -665,7 +665,7 @@
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">Properties props = new Properties();
-      props.put(&quot;bootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
+      props.put(&quot;ootstrap.servers&quot;, &quot;ssp-kafka-headless.strimzi-030.svc.cluster.local:9092&quot;);
       props.put(&quot;group.id&quot;, &quot;group&quot;);
       props.put(&quot;enable.auto.commit&quot;, &quot;true&quot;);
       props.put(&quot;auto.commit.interval.ms&quot;, &quot;1000&quot;);
